@@ -6,6 +6,7 @@ const jsdom = require("jsdom");
 // Make a GET request to our URL.
 const Http = new XMLHttpRequest();
 const url = "https://www.totalsportek.com/category/football/";
+// const url = "https://darsh.sportsvideo.net/new-api/matches?timeZone=-330&date=2021-03-15";
 Http.open("GET", url);
 Http.send();
 
@@ -29,7 +30,7 @@ function getStreamz(data) {
     };
 
     // For local testing, uncomment the code below to investigate the json object. 
-    // fs.writeFile('streamz.json', JSON.stringify(streamz), (err) => { 
+    // fs.writeFile('myStreamz.json', JSON.stringify(streamz), (err) => { 
     //     if (err) throw err; 
     // });
 }
